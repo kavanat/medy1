@@ -158,3 +158,30 @@ input[type="text"]::-webkit-input-placeholder { color: #fff; }
     background:#1E848C;
     color: #fff;
 }
+.heading button {
+    width:45%;
+    height: 40px;
+    margin-top:5%;
+    padding:5px 0 10px 5px;
+    vertical-align: middle;
+    background:#7ac9cc;
+    border: 0;
+    margin-left:3em;  
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 52px;
+    color: #fff;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 2px;
+    text-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
