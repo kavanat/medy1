@@ -22,6 +22,10 @@ a, a:hover, a:focus {
     -ms-transition: all .3s;
     transition: all .3s;
 }
+h1,h2,h3,h4,h5,h6{
+	color:black;
+
+}
 
 h2 {
 	margin-top: 10px;
@@ -209,6 +213,7 @@ footer {
 	height:75px; 
 	background-color:#DDDDDD;
 	color: #FFFFFF;
+	z-index:10;
 	
 }
 .features{
@@ -222,16 +227,16 @@ footer {
 .heading{
 	height:80px;
 	background-color: white;
-	margin-bottom:20%;
+	margin-bottom:10vh;
 	
 
 }
 .card{
 	background-color: white;
-	height:280px;
+	height:240px;
 	border-radius: 3px;
-	margin-top:2vh;
-	
+	margin-top:2vw;
+	z-index:2;
 	width:38vw;
 }
 .tip{
@@ -239,6 +244,23 @@ footer {
 	height:400px;
 	border-radius: 3px;
 	margin-top:2vh;
-
+	z-index:3;
 	width:30vw;
+}
+.image img{
+	height:120px;
+	border-radius: 4px;
+}
+.content{
+	height:100px;
+	float:left;
+	text-align: left;
+}
+.sub{	
+	border:solid 1px;
+	border-right-color: #7ac9cc;
+	border-left:thin  1px transparent;
+	border-top:thin  1px transparent;
+	height:50px;
+
 }

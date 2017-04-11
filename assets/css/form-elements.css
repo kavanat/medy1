@@ -166,7 +166,7 @@ input[type="text"]::-webkit-input-placeholder { color: #fff; }
     vertical-align: middle;
     background:#7ac9cc;
     border: 0;
-    margin-left:3em;  
+    margin-left:0em;  
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 300;
