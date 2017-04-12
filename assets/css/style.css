@@ -256,11 +256,47 @@ footer {
 	float:left;
 	text-align: left;
 }
-.sub{	
+.sub{ 	
 	border:solid 1px;
 	border-right-color: #7ac9cc;
 	border-left:thin  1px transparent;
 	border-top:thin  1px transparent;
 	height:50px;
 
+}
+.tip img{
+	height:200px;
+	margin:5%;
+	width:92%;
+}
+.head{
+	margin-top:5%;
+}
+.card1{
+	background-color:white;
+	border-radius:5px;
+	height:400px;
+	margin-top:5%;
+}
+.card1 img{
+	height:180px;
+	width:60vw;
+	margin-top:2%;
+}
+.coupon{
+	background-color: white;
+	height:auto;
+	border-radius:5px;
+}
+.booking{
+	background-color: white;
+	height:500px;
+	border-radius:5px;
+}
+.book{
+	background-color: #1E848C;
+	height:50px;
+	width:100%;
+	padding:5%;
+	border-radius: 5px;
 }
