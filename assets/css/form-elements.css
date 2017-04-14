@@ -161,7 +161,7 @@ input[type="text"]::-webkit-input-placeholder { color: #fff; }
 .heading button {
     width:45%;
     height: 40px;
-    margin-top:5%;
+    margin-top:2%;
     padding:5px 0 10px 5px;
     vertical-align: middle;
     background:#7ac9cc;

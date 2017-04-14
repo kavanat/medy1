@@ -225,7 +225,7 @@ footer {
 	width:100%;
 }
 .heading{
-	height:80px;
+	height:50px;
 	background-color: white;
 	margin-bottom:10vh;
 	
@@ -237,7 +237,7 @@ footer {
 	border-radius: 3px;
 	margin-top:2vw;
 	z-index:2;
-	width:38vw;
+	width:45vw;
 }
 .tip{
 	background-color: white;
@@ -245,11 +245,13 @@ footer {
 	border-radius: 3px;
 	margin-top:2vh;
 	z-index:3;
-	width:30vw;
+	width:25vw;
 }
 .image img{
 	height:120px;
 	border-radius: 4px;
+	margin-left:-13%;
+	width:90%;
 }
 .content{
 	height:100px;
