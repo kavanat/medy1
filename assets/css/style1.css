@@ -333,11 +333,13 @@ footer {
 .login h2{
 	color: #1E848C;
 	font-size:2em;
+	
 }
 .login h4{
 	color: #1E848C;
 	font-size:1.5em;
 	margin-left:20%;
+	margin-top:30%;
 }
 .login hr{
 margin-top:10%;
@@ -358,9 +360,18 @@ width:100%;
 .login focus:input{
 	border:1px solid #1E848C;s
 }
-.login h5{
+.login h6{
 	margin-top:3%;
-	margin-left:12%;
+	margin-left:15%;
+	font-weight:-200;
+	color:grey;
+}
+.getotp h6{
+	margin-top:3%;
+	margin-left:25%;
+	font-weight:-200;
+	color:grey;
+
 }
 .login button{
 	background-color: #1E848C;
@@ -419,4 +430,10 @@ width:100%;
 	margin-right:-4%;
 	height:100px;
 
+}
+input[type="text"]  {
+    border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
 }
