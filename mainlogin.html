@@ -28,31 +28,20 @@
 }
    </style> 
    <script>
-  /* var app = angular.module("myApp", ["ngRoute"]);
-	app.config(function($routeProvider) {
-    $routeProvider    
-    .when("/", {
-        templateUrl : "mainlogin.html",
-        controller : "TestController"
-
-    })  
-    .when("/login", {
-        templateUrl : "login.html"
-        
-    })   
-});*/
-	var app = angular.module("myApp", []);
-   	app.controller('TestController', ['$scope','$location', function ($scope, $location) {
-	/*$scope.number = '';
+ /*
+ var app1 = angular.module("myApp", []);
+  app1.controller("TestController",function($rootScope,$scope,$location){
+    $scope.submit =function(){
+      $location.path('/login.html');
+      
+      };
  
-    $scope.getnumber = function () {
-    	console.log($scope.number);
-        return $scope.number;*/
-        $scope.go = function() {
-   		$location.path('/login.html');
-   }
-    };
-}]);
+  
+
+      
+    
+    
+  });*/
    </script>  
 </head>
 <body  style="background-color:#CCCCCC;" ng-App="myApp">
@@ -76,9 +65,9 @@
 			</div>
 			<div class="row">
 				<div class="col-xs-1"></div>
-				<div class="getotp col-xs-9" ng-controller="TestController">					
+				<div class="getotp col-xs-9">					
 					<h6>You'll recieve one time password for verification</h6>
-					<button type="button" class="btn" ng-click='go()'>GET OTP</button>					
+					<a href="login.html"><button type="button" class="btn">GET OTP</button></a>			
 				</div>
 				<div class="col-xs-1"></div>
 			</div>
@@ -86,6 +75,6 @@
 		<div class="side col-xs-3">
 		</div>
 	</div>
-</body>
+</body>s
 </html>
 

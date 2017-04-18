@@ -277,39 +277,51 @@ footer {
 .card1{
 	background-color:white;
 	border-radius:5px;
-	height:500px;
+	height:450px;
 	margin-top:10%;s
 }
 .card1 img{
-	height:250px;
+	height:230px;
 	width:60vw;
 	margin-top:2%;
 }
 .coupon{
 	background-color: white;
 	height:auto;
-	border-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	padding:0;
 }
+
 .booking{
 	background-color: white;
-	height:500px;
+	height:450px;
+	padding:0%;
 	border-radius:5px;
+	position:fixed;
+	float:right;
+	margin-left:70%;
+	z-index:3;
+	box-shadow:1px 5px 5px #CCCCCC;
+
 }
 .book{
 	background-color: #1E848C;
 	height:50px;
 	width:100%;
 	padding:5%;
-	border-radius: 5px;
+	border-top-right-radius:5px;
+	border-top-left-radius:5px;
 }
 .card2{
-	background-color:white;
-	height:250px; 
+	
+	height:auto; 
 	margin-top:10%;
 	border-radius: 5px;
 }
 .card3{
-	background-color:white;
+	padding:0;
+	
 	height:auto; 
 	margin-top:10%;
 	border-radius: 5px;
@@ -319,4 +331,7 @@ footer {
 	height:auto; 
 	margin-top:10%;
 	border-radius: 5px;
+}
+.detail{
+	background-color: white;
 }
