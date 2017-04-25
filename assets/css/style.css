@@ -227,6 +227,17 @@ footer {
 	display:none;
 	
 }
+.three{
+	position:fixed;
+	top:0px;
+	width:100%; 
+	height:75px; 
+	background-color:#DDDDDD;
+	color: #FFFFFF;
+	z-index:10;
+	
+	
+}
 .features{
 	background-color:#1E848C; 
 	height:50px;
@@ -302,7 +313,7 @@ footer {
 	border-top-right-radius: 5px;
 	border-top-left-radius: 5px;
 }
-.card2{
+.card10{
 	background-color:white;
 	border-radius:5px;
 	
@@ -342,23 +353,50 @@ footer {
 .card2{
 	
 	height:auto; 
-	margin-top:10%;
+	margin-top:2%;
 	border-radius: 5px;
+	background-color: white;
 }
 .card3{
 	padding:0;
 	
 	height:auto; 
-	margin-top:10%;
+	margin-top:2%;
 	border-radius: 5px;
 }
 .card4{
 	background-color:white;
 	height:auto; 
-	margin-top:10%;
+	margin-top:0%;
 	border-radius: 5px;
 }
 .detail{
 	background-color: white;
 }
+.det{
+	margin-top:30%;
+	background-color: white;
+	height:300px;
+	padding:0;
+	margin:0;
 
+}
+.det img{
+	height:300px;
+}
+.innerside{
+	background-color: white;
+	width:10px;
+}
+.half{
+	overflow:hidden;
+	width:100%;
+	height:300px;
+}
+.para{
+	margin-left:-5px;
+	padding-right:6%;
+	text-align:justify;
+	font-size:14px;
+	color:black;
+}
