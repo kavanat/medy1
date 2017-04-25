@@ -39,6 +39,10 @@ img { max-width: 100%; }
 ::-moz-selection { background: #42bfc2; color: #fff; text-shadow: none; }
 ::selection { background: #42bfc2; color: #fff; text-shadow: none; }
 /*navbar*/
+.navbar{
+	margin-top:-20px;
+	height:50px;
+}
 .navbar-header{
    left: 50%;
    position: relative;
@@ -47,9 +51,13 @@ img { max-width: 100%; }
 .navbar-header img{
 	width:50%;
 	padding:2%;
+	margin-top:20%;
 }
-.navbar-right li h4{
-	color:black;
+.navbar-right li h5{
+	color:white;
+	margin-top:-0px;
+	font-weight:600;
+	
 	
 }
 .navbar-right li {
@@ -124,9 +132,10 @@ img { max-width: 100%; }
 .top{
 	 background:#1E848C;
 	 height:50px;
+	 margin-top:1.4%;
 }
 .bottom{
-	background-color: #7ac9cc;
+	background-color: white;
 	height:60px;
 }
 .subscribe {
@@ -136,6 +145,7 @@ img { max-width: 100%; }
 .subscribe form input {
     width: 550px;
     height: 35px;
+    border:solid 1px #7ac9cc ;
 }
 
 .success-message, .error-message {
@@ -146,7 +156,7 @@ img { max-width: 100%; }
 /* Main div with image*/
 .subscribe{
 	width:100%;
-	background-color:#7ac9cc;
+	background-color:none;
 	height:50px;
 	margin-top:10%;
 }
@@ -201,7 +211,7 @@ footer {
 .hosphar{
 	margin-top:5%;
 	margin-bottom:-8%;
-	background-color: #EDE5DD;
+	background-color:none;
 	opacity:75%;
 	height:50px;
 	border-radius:2px;
@@ -214,6 +224,7 @@ footer {
 	background-color:#DDDDDD;
 	color: #FFFFFF;
 	z-index:10;
+	display:none;
 	
 }
 .features{
@@ -234,7 +245,7 @@ footer {
 .card{
 	background-color: white;
 	height:240px;
-	border-radius: 3px;
+	border-radius: 5px;
 	margin-top:2vw;
 	z-index:2;
 	width:45vw;
@@ -277,13 +288,28 @@ footer {
 .card1{
 	background-color:white;
 	border-radius:5px;
-	height:450px;
-	margin-top:10%;s
+	height:auto;
+	margin-top:10%;
+	padding:0%;
+	width:20.5%;
+	max-height:330px;
+	
+	box-shadow:1px 5px 5px #CCCCCC;
 }
 .card1 img{
-	height:230px;
+	height:150px;
 	width:60vw;
-	margin-top:2%;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+.card2{
+	background-color:white;
+	border-radius:5px;
+	
+	margin-top:10%;
+	padding:0%;
+	width:20.5%;	
+	height:auto;
 }
 .coupon{
 	background-color: white;

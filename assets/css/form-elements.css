@@ -5,7 +5,7 @@ input[type="text"] {
     padding: 0 10px;
     vertical-align: middle;
     background: white;
-    border: 1px solid #fff;
+    border: 1px solid;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 300;
@@ -26,7 +26,7 @@ input[type="text"] {
 
 input[type="text"]:focus {
 	outline: 0;
-    border: 1px solid #fff;
+    border: 1px solid ;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -43,7 +43,7 @@ input[type="text"]::-webkit-input-placeholder { color: #fff; }
     margin-top:0.6%;
     padding:5px 0 10px 5px;
     vertical-align: middle;
-    background: #CCCCCC;
+    background:#7ac9cc;
     border: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
