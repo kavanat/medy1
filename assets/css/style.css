@@ -172,7 +172,7 @@ logonav ul li{
 /***** Footer *****/
 
 footer {
-	margin-top: 500px;
+	margin-top: 700px;
 	height:200px;
 	padding: 20px 0 15px 0;
 	background-color:#7ac9cc;
@@ -219,7 +219,7 @@ footer {
 .two {
 	position:fixed;
 	top:0px;
-	width:100%; 
+	width:98%; 
 	height:75px; 
 	background-color:#DDDDDD;
 	color: #FFFFFF;
@@ -351,20 +351,40 @@ footer {
 	border-top-left-radius:5px;
 }
 .card2{
+	background-color: white;
+	height:200px;
+	margin-top:4%;
+	border-radius: 5px;
+	padding:0;
+
+}
+.p p{
+	text-align:left;
+	font-size:1.5em;
+	padding-left:2%;
+}
+.foot{
+	background-color:#1E848C;
+	height:40px; 
 	
-	height:auto; 
+}
+
+.card3{
+	
+	height:200px; 
 	margin-top:2%;
 	border-radius: 5px;
 	background-color: white;
 }
-.card3{
+.card4{
 	padding:0;
-	
-	height:auto; 
+	margin-right:0;
+	margin-left:0;
+	height:200px; 
 	margin-top:2%;
 	border-radius: 5px;
 }
-.card4{
+.card5{
 	background-color:white;
 	height:auto; 
 	margin-top:0%;
@@ -372,6 +392,8 @@ footer {
 }
 .detail{
 	background-color: white;
+	height:200px;
+	margin-left:-10%	;
 }
 .det{
 	margin-top:30%;
@@ -400,3 +422,15 @@ footer {
 	font-size:14px;
 	color:black;
 }
+.healthtips{
+	margin-top:30%;
+	margin-left:10%;
+	color:#1E848C;	
+}
+
+
+.hospital{
+	margin-top:30%;
+	color:#1E848C;	
+		
+}	
