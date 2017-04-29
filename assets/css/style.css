@@ -173,9 +173,13 @@ logonav ul li{
 
 footer {
 	margin-top: 700px;
-	height:200px;
-	padding: 20px 0 15px 0;
+	height:auto;
+	text-align: left;
+	padding-left: 50px;
+	padding-top:20px;
+	padding-bottom:20px;
 	background-color:#1E848C;
+	color:white;
 	
 }
 
@@ -404,6 +408,12 @@ footer {
 }
 .det img{
 	height:300px;
+	width:100%;
+}
+.middle{
+	
+	margin-left:2%;
+	background-color: white;
 }
 .innerside{
 	background-color: white;
