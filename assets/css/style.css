@@ -6,6 +6,9 @@ body {
     color: #fff;
     text-align: center;
 }
+ html{
+            overflow-x:hidden;
+        }
 .b{
 	height:400px;
 	width:100%;
@@ -143,9 +146,23 @@ img { max-width: 100%; }
 }
 
 .subscribe form input {
+   	width:200px;
+    height: 35px;
+    border:solid 1px #7ac9cc ;
+}
+@media screen and (min-width: 800px) {
+   .subscribe form input {
+    width: 300px;
+    height: 35px;
+    border:solid 1px #7ac9cc ;
+}
+}
+@media screen and (min-width: 1000px) {
+   .subscribe form input {
     width: 550px;
     height: 35px;
     border:solid 1px #7ac9cc ;
+}
 }
 
 .success-message, .error-message {
@@ -446,5 +463,5 @@ footer {
 #navs h3{
 	color:white;
 	padding-top:10px;
-	margin-left:30%;
+	margin-left:10%;
 }
