@@ -172,7 +172,7 @@ logonav ul li{
 /***** Footer *****/
 
 footer {
-	margin-top: 700px;
+	margin-top:2%;
 	height:auto;
 	text-align: left;
 	padding-left: 50px;
@@ -306,7 +306,7 @@ footer {
 	margin-top:10%;
 	padding:0%;
 	width:20.5%;
-	max-height:330px;
+	
 	
 	box-shadow:1px 5px 5px #CCCCCC;
 }
