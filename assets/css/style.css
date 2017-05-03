@@ -465,3 +465,19 @@ footer {
 	padding-top:10px;
 	margin-left:10%;
 }
+@media screen and (min-width: 1000px) {
+	.jsor{
+		width:158%;
+	}
+	#jssor_1{
+		width:40%;
+	}
+}
+@media screen and (max-width: 1000px) {
+	.jsor{
+	width:20%;
+}
+#jssor_1{
+		width:auto;
+	}
+}
