@@ -82,6 +82,33 @@ z<!DOCTYPE html>
             /*responsive code end*/
         });
     </script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
+    <script type="text/javascript">
+        google.maps.event.addDomListener(window, 'load', function () {
+            var places = new google.maps.places.Autocomplete(document.getElementById('txtPlaces1'));
+            google.maps.event.addListener(places, 'place_changed', function () {
+                var place = places.getPlace();
+                var address = place.formatted_address;
+                var latitude = place.geometry.location.lat();
+                var longitude = place.geometry.location.lng();
+                var mesg = "Address: " + address;
+                mesg += "\nLatitude: " + latitude;
+                mesg += "\nLongitude: " + longitude;
+                /*alert(mesg);*/
+            });
+            var places = new google.maps.places.Autocomplete(document.getElementById('txtPlaces2'));
+            google.maps.event.addListener(places, 'place_changed', function () {
+                var place = places.getPlace();
+                var address = place.formatted_address;
+                var latitude = place.geometry.location.lat();
+                var longitude = place.geometry.location.lng();
+                var mesg = "Address: " + address;
+                mesg += "\nLatitude: " + latitude;
+                mesg += "\nLongitude: " + longitude;
+                /*alert(mesg);*/
+            });
+        });
+    </script>
     <style>
         /* jssor slider bullet navigator skin 01 css */
         /*
@@ -149,6 +176,14 @@ z<!DOCTYPE html>
             height:500px;
          
         }
+        .search { position: relative; }
+.search input { text-indent: 35px;}
+.search .fa-search { 
+  position: absolute;
+  top: 18px;
+  left: 30%;
+  font-size: 15px;
+}
     </style>    
 </head>
 <body ng-app="" style="background-color:#EDF1F2;">
@@ -169,16 +204,7 @@ z<!DOCTYPE html>
                 <li><a href="#"><h5>LOG IN</h5></a></li>
                 <li><a href="#"><h5>SIGN UP</h5></a></li>
                 <li><a href-"#">
-                    <div class="dropdown">
-                      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:transparent">
-                        <h5 style="margin-top:-27px"><i class="fa fa-map-marker" style="color:#7ac9cc" aria-hidden="true"></i> LOCATION</h5>
-                      </button>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                      </div>
-                    </div>
+                    <input type="text" id="txtPlaces1" style="width: 250px;margin-top:-10px;height:40px;border:none" placeholder="Enter a location" />
                     </a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
@@ -201,7 +227,7 @@ z<!DOCTYPE html>
                         <li><a href="#"><h5>PHARMACY</h5></a></li>
                         <li><a href="#"><h5>LOG IN</h5></a></li>
                         <li><a href="#"><h5>SIGN UP</h5></a></li>
-                        <li><a href-"#">                      
+                        <li><a href-"#"> <input type="text" id="txtPlaces2" style="width: 250px;margin-top:-10px;height:40px;border:none" placeholder="Enter a location" />                     
                             </a></li>
                       </ul>
                     </div><!-- /.navbar-collapse -->
@@ -216,7 +242,7 @@ z<!DOCTYPE html>
                         <div class="subscribe wow fadeInUp col-xs-12"style="margin-top:1%">
                             <form class="form-inline" action="" method="post">
                                 <input type="text" name="email" placeholder="Search for the category" class="subscribe-email">
-                                <button type="submit" class="btn" style="width:18%;"><h5 style="margin-top:5px">Search</h5></i></button>
+                                <button type="submit" class="btn" style="width:20%;"><h5 style="margin-top:5px">Search</h5></i></button>
                             </form>
                             <div class="success-message"></div>
                             <div class="error-message"></div>
@@ -230,8 +256,11 @@ z<!DOCTYPE html>
           
             <div class="subscribe wow fadeInUp">
                 <form class="form-inline" action="" method="post">
-                    <input type="text" name="email" placeholder="Type the location" class="subscribe-email" style="border:none">
-                    <button type="submit" class="btn"><h5 style="margin-top:5px">Search</h5><!-- <i class="fa fa-star"></i> --></button>
+                    <div class="search">
+                        <span><i class="fa fa-search" style=" color:#1E848C;font-size:20px"aria-hidden="true"></i></span>
+                        <input type="text" name="email" placeholder="Type the location" class="subscribe-email" style="border:none;height:40px">
+                    </div>
+                   
                 </form>                
             </div>                     
         </div>

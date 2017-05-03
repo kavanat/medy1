@@ -140,6 +140,8 @@ img { max-width: 100%; }
 .bottom{
 	background-color: white;
 	height:60px;
+	box-shadow:1px 5px 5px #CCCCCC;
+
 }
 .subscribe {
 	margin-top: 60px;
