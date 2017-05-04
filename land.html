@@ -177,15 +177,45 @@ z<!DOCTYPE html>
          
         }
         .search { position: relative; }
-.search input { text-indent: 35px;}
-.search .fa-search { 
-  position: absolute;
-  top: 18px;
-  left: 30%;
-  font-size: 15px;
-}
-.carousel-control.left, .carousel-control.right {
-    background-image: none;
+        .search input { text-indent: 35px;}
+        .search .fa-search { 
+          position: absolute;
+          top: 18px;
+          left: 30%;
+          font-size: 15px;
+        }
+        .carousel-control.left, .carousel-control.right {
+            background-image: none;
+        }
+
+        .dropdown-menu:before {
+          position: absolute;
+          top: -7px;
+          color:white;
+          left: 9px;
+          display: inline-block;
+          border-right: 7px solid transparent;
+          border-bottom: 7px solid none;
+          border-left: 7px solid transparent;
+          border-bottom-color: none;
+          content: '';
+        }
+
+        .dropdown-menu:after {
+          position: absolute;
+          top: -6px;
+          left: 250px;
+          max-width:500px;
+          height:auto;
+          display: inline-block;
+          border-right: 6px solid transparent;
+          border-bottom: 6px solid #ffffff;
+          border-left: 6px solid transparent;
+          content: '';
+        }
+        .navbar-right .dropdown-menu {
+    right: 0;
+    left: -210px;
 }
     </style>    
 </head>
@@ -207,7 +237,12 @@ z<!DOCTYPE html>
                 <li><a href="#"><h5>LOG IN</h5></a></li>
                 <li><a href="#"><h5>SIGN UP</h5></a></li>
                 <li><a href-"#">
-                    <input type="text" id="txtPlaces1" style="width: 250px;margin-top:-10px;height:40px;border:none" placeholder="Enter a location" />
+                    <div class="dropdown">
+                                    <a data-toggle="dropdown" href="#"><h5 style="margin-top:-15px;font-size:14px"><i class="fa fa-map-marker" aria-hidden="true"></i> LOCATION</h5></a>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" style="width:300px;margin-top:20px;margin-left:0%">
+                                    <input type="text" id="txtPlaces2" style="width: 250px;height:40px;border:1px solid #1E848C;padding:2%;margin-left:20px" placeholder="Enter a location" />
+                                    </ul>
+                                </div>  
                     </a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
@@ -224,15 +259,22 @@ z<!DOCTYPE html>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">          
-                      <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#"><h5>HOSPITALS</h5></a></li>
-                        <li><a href="#"><h5>CLINICS</h5></a></li>
-                        <li><a href="#"><h5>PHARMACY</h5></a></li>
-                        <li><a href="#"><h5>LOG IN</h5></a></li>
-                        <li><a href="#"><h5>SIGN UP</h5></a></li>
-                        <li><a href-"#"> <input type="text" id="txtPlaces2" style="width: 250px;margin-top:-10px;height:40px;border:none" placeholder="Enter a location" />                     
-                            </a></li>
-                      </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><h5>HOSPITALS</h5></a></li>
+                            <li><a href="#"><h5>CLINICS</h5></a></li>
+                            <li><a href="#"><h5>PHARMACY</h5></a></li>
+                            <li><a href="#"><h5>LOG IN</h5></a></li>
+                            <li><a href="#"><h5>SIGN UP</h5></a></li>
+                            <li><a href-"#">
+                                <div class="dropdown">
+                                    <a data-toggle="dropdown" href="#"><h5 style="margin-top:-15px;font-size:14px"><i class="fa fa-map-marker" aria-hidden="true"></i> LOCATION</h5></a>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" style="width:300px;margin-top:20px;margin-left:0%">
+                                    <input type="text" id="txtPlaces2" style="width: 250px;height:40px;border:1px solid #1E848C;padding:2%;margin-left:20px" placeholder="Enter a location" />
+                                    </ul>
+                                </div>                                                   
+                                </a>
+                            </li>
+                        </ul>
                     </div><!-- /.navbar-collapse -->
                   </div><!-- /.container-fluid -->
                 </nav>
