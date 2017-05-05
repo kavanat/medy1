@@ -356,9 +356,6 @@ footer {
 	height:450px;
 	padding:0%;
 	border-radius:5px;
-	position:fixed;
-	float:right;
-	margin-left:70%;
 	z-index:3;
 	box-shadow:1px 5px 5px #CCCCCC;
 
@@ -482,8 +479,19 @@ footer {
 		width:auto;
 	}
 }
-::i-block-chrome,
-        input[placeholder]::-webkit-input-placeholder {
-            color: red;
-        }
+.name{
+	background-color: white;
+	border-top-left-radius:5px; 
+	border-top-right-radius:5px;
+	height:50px;
+	margin-top:20%;
 
+}
+.name h4,h5,h6{
+	color:#1E848C;
+}
+.coupon1{
+	background-color: white;
+	border-radius:5px;
+	box-shadow: 5px 5px 5px #CCCCCC;
+}
