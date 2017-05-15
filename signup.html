@@ -13,11 +13,14 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script type="text/javascript"src="assets/js/controller.js"></script>
+   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>   
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>   
+    
     <link rel="stylesheet" href="assets/css/style1.css"> 
    <style>
-   input[type="text"]{
+    input[type="text"]{
     border: 0;
     border-radius: 0;
     outline: 0;
@@ -48,10 +51,10 @@
 });
    </script> 
 </head>
-<body style="background-color:#CCCCCC;" >
+<body style="background-color:#CCCCCC;" ng-app="mainApp" >
   <div class="container" style="background-color:#1E848C;height:80px;width:100%">
   </div>
-  <div class="row">
+  <div class="row" ng-controller="details">
     <div class="side col-xs-3">
     </div>
     <div class="login col-xs-5">
@@ -65,7 +68,7 @@
             <h1><i class="fa fa-user" aria-hidden="true" style="color:#1E848C"></i></h1>
           </div>
           <div class="col-xs-8">
-            <input type="text" style="width:100%;margin-top:4.2%;text-align:left;font-size:20px"ng-model="number" placeholder="Name" required/>
+            <input type="text" style="width:100%;margin-top:4.2%;text-align:left;font-size:20px" placeholder="Name" ng-model="name" required/>
           </div>
           <div class="col-xs-1"></div>
         </div>
@@ -78,7 +81,7 @@
             <h1><i class="fa fa-envelope" aria-hidden="true" style="color:#1E848C"></i></h1>
           </div>
           <div class="col-xs-8">
-            <input type="email" style="width:100%;margin-top:4.2%;text-align:left;font-size:20px"ng-model="number" placeholder="Email" required/>
+            <input type="email" style="width:100%;margin-top:4.2%;text-align:left;font-size:20px" placeholder="Email" ng-model="email" required/>
           </div>
           <div class="col-xs-1"></div>
         </div>
@@ -91,14 +94,14 @@
             <h1><i class="fa fa-phone" aria-hidden="true" style="color:#1E848C"></i></h1>
           </div>
           <div class="col-xs-8">
-            <input type="text" style="width:100%;margin-top:4.1%;text-align:left;font-size:20px"ng-model="number" placeholder="Mobile" required/>
+            <input type="text" style="width:100%;margin-top:4.1%;text-align:left;font-size:20px" placeholder="Mobile" ng-model="mobile" required/>
           </div>
           <div class="col-xs-1"></div>
         </div>
         <!-- mobile ends-->
         <div class="row">
           <div class="col-xs-9">
-            <input type="submit" class="btn" id="btn" style="width:80%;border-radius:2px;background-color:#1E848C;height:40px;margin-left:34%;margin-top:5%" value="REGISTER" >
+            <input type="submit" class="btn" id="btn" style="width:80%;border-radius:2px;background-color:#1E848C;height:40px;margin-left:34%;margin-top:5%" value="REGISTER" ng-click="clickme()" >
           </div>
           <div class="col-xs-3">
             <img class="wait" src="assets/img/images/load.gif" style="width:78px;height:78px;display:none"/>
