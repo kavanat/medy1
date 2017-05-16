@@ -138,8 +138,8 @@ img { max-width: 100%; }
 	 margin-top:1.4%;
 }
 .bottom{
-	-moz-background:rgb(122,201,204,.5);
-	-webkit-background:rgb(122,201,204,.5);	
+	background:rgb(122,201,204,.5);
+		
 	height:60px;
 	z-index:2;
 	margin-top:-1.6%;
@@ -376,9 +376,9 @@ footer {
 }
 .book{
 	background-color: #1E848C;
-	height:50px;
+	height:5px;
 	width:100%;
-	padding:5%;
+	padding:3%;
 	border-top-right-radius:5px;
 	border-top-left-radius:5px;
 }
@@ -508,4 +508,44 @@ footer {
 	background-color: white;
 	border-radius:5px;
 	box-shadow: 5px 5px 5px #CCCCCC;
+}
+.profile{
+	background-color:white;
+	height:auto;
+	margin-top:5%;
+	width:90%;
+	border-radius:2px;
+	padding-bottom:2%;
+}
+.profile h3{
+	text-align:left;
+	margin-left:2%;
+}
+.img-circle{
+	margin-top:15%;
+	margin-left:10%;
+	border-radius:50%;
+	width:180px;
+	height:180px;
+
+}
+.names{
+
+}
+.names h3 {
+	margin-left:5%;
+	margin-top:8%;
+}
+.names h5{
+	text-align:left;
+	margin-left:5%;
+	color:grey;
+	margin-top:5%;
+	line-height:150%;
+}
+.detail{
+	margin-top:2%;
+	float:left;
+	text-align:left;
+	margin-left:5%;
 }
