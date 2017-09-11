@@ -1,0 +1,44 @@
+<html lang="en" >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+   
+  <script>
+    $scope.localSearch = function(str, people) {
+  var matches = [];
+  people.forEach(function(person) {
+    var fullName = person.firstName + ' ' + person.surname;
+    if ((person.firstName.toLowerCase().indexOf(str.toString().toLowerCase()) >= 0) ||
+        (person.surname.toLowerCase().indexOf(str.toString().toLowerCase()) >= 0) ||
+        (fullName.toLowerCase().indexOf(str.toString().toLowerCase()) >= 0)) {
+      matches.push(person);
+    }
+  });
+  return matches;
+};
+  </script>
+</head>
+<body>
+  <div angucomplete-alt id="ex2"
+  placeholder="Search people"
+  pause="300"
+  selected-object="selectedPerson"
+  local-data="people"
+  local-search="localSearch"
+  title-field="firstName,surname"
+  description-field="twitter"
+  image-field="pic"
+  minlength="1"
+  input-class="form-control form-control-small"
+  match-class="highlight">
+</div>  
+</body>
+</html>
